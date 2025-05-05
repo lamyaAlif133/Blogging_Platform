@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: #9cd1ad;
+    background: #defbe7;
     padding: 20px;
     color: #e1eede;
   }
@@ -8,7 +8,7 @@ body {
   .editor-container {
     max-width: 800px;
     margin: auto;
-    background: #3d6d4a;
+    background: #6fa37d;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     padding: 15px;

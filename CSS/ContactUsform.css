@@ -1,14 +1,15 @@
 body {
+  background: url('../Assets/contract.jpg') no-repeat center center/cover;
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
+   
     padding: 20px;
   }
 
   .container {
     max-width: 400px;
     margin: auto;
-    background: #fff;
-    padding: 20px;
+    background: #b3cfbb;
+    padding: 50px;
     border-radius: 8px;
     box-shadow: 0 0 10px #ccc;
   }
@@ -34,7 +35,7 @@ body {
     margin-top: 20px;
     width: 100%;
     padding: 10px;
-    background: #28a745;
+    background: #658e6e;
     color: white;
     border: none;
     border-radius: 5px;
