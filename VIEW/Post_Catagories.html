@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Categories & Tags</title>
+  <link rel="stylesheet" href="../CSS/Post_Catagories.css">
+</head>
+<body>
+
+ <!-- <h1>Eclipta</h1> -->
+  <img height="100px" width="100px" src="../Assets/logo.png">
+
+ 
+  <section id="category-manager">
+    <h2>Category Manager</h2>
+    <input type="text" id="new-category" placeholder="Enter new category">
+    <button onclick="addCategory()">Add Category</button>
+    <ul id="category-list"></ul>
+  </section>
+
+  
+  <section id="create-post">
+    <h2>Create Post</h2>
+    <input type="text" id="post-title" placeholder="Post Title">
+    <textarea id="post-content" placeholder="Post Content"></textarea>
+    
+    <h3>Assign Categories</h3>
+    <div id="category-assignment"></div>
+
+    <h3>Tags (comma-separated)</h3>
+    <input type="text" id="post-tags" placeholder="e.g. tech, AI, news">
+
+    <button onclick="createPost()">Publish Post</button>
+  </section>
+
+  
+  <aside id="sidebar">
+    <h2>Filter by Category</h2>
+    <ul id="filter-categories"></ul>
+  </aside>
+
+  <aside id="tag-filter">
+    <h2>Filter by Tag</h2>
+    <ul id="filter-tags"></ul>
+  </aside>
+
+  
+  <section id="posts">
+    <h2>All Posts</h2>
+    <div id="post-list"></div>
+  </section>
+
+  <script src="../JS/Post_Catagories.js"></script>
+</body>
+</html>

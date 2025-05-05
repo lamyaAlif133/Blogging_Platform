@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Newsletter Signup</title>
+  <link rel="stylesheet" href="../CSS/Newsletter_Signup.css" />
+</head>
+<body>
+
+  <!-- Newsletter Signup Popup -->
+  <div id="newsletter-popup" class="popup">
+    <form id="signup-form" class="form">
+      <h2>📬 Join Our Newsletter</h2>
+      <p>Stay updated with the latest blog posts and news.</p>
+      <input type="email" id="email" placeholder="Enter your email" required />
+      
+      <div class="consent">
+        <input type="checkbox" id="gdpr-consent" required />
+        <label for="gdpr-consent">I agree to the GDPR Terms</label>
+      </div>
+
+      <div class="form-buttons">
+        <button type="submit">✅ Subscribe</button>
+        <button type="button" id="close-btn">❌ Close</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Admin Panel -->
+  <div id="admin-panel">
+    <h3>👩‍💼 Admin Panel</h3>
+    <p>Total Subscribers: <span id="subscriber-count">0</span></p>
+    <button id="export-btn">📁 Export Emails</button>
+  </div>
+
+  <script src="../JS/Newsletter_Signup.js"></script>
+</body>
+</html>

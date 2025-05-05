@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+  }
+
+  .container {
+    max-width: 400px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  label {
+    display: block;
+    margin-top: 15px;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  #confirmation {
+    display: none;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .captcha {
+    margin-top: 15px;
+    font-weight: bold;
+  }

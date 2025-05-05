@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Archive</title>
+    <link rel="stylesheet" href="../CSS/ArchiveView.css">
+</head>
+<body>
+
+    <div class="archive-container">
+        <h1>Blog Archive</h1>
+
+      
+        <div class="date-filter">
+            <label for="year">Year:</label>
+            <select id="year">
+                
+            </select>
+
+            <label for="month">Month:</label>
+            <select id="month">
+                
+            </select>
+            <button id="filter-btn">Filter</button>
+        </div>
+
+        
+        <div class="archive-view">
+            <h2>Posts:</h2>
+            <ul id="archive-posts">
+               
+            </ul>
+        </div>
+
+        
+        <div class="on-this-day">
+            <button id="on-this-day-btn">Show Posts from This Day in History</button>
+        </div>
+
+       
+        <div class="export-buttons">
+            <button id="export-json">Export as JSON</button>
+            <button id="export-xml">Export as XML</button>
+        </div>
+
+    </div>
+
+    <script src="../JS/ArchiveView.js"></script>
+</body>
+</html>
