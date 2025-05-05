@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rich Text Editor</title>
+    <link rel="stylesheet" href="../CSS/rich-text-editor.css">
+</head>
+
+<body>
+
+    <div class="editor-container">
+        <h3>Start Writing..</h3>
+        <div class="toolbar">
+            <button onclick="format('bold')"><b>B</b></button>
+            <button onclick="format('italic')"><i>I</i></button>
+            <button onclick="format('underline')"><u>U</u></button>
+            <button onclick="format('insertOrderedList')">OL</button>
+            <button onclick="format('insertUnorderedList')">UL</button>
+            <button onclick="format('formatBlock', '<h1>')">H1</button>
+            <button onclick="format('formatBlock', '<h2>')">H2</button>
+            <button onclick="insertLink()">🔗 Link</button>
+            <button onclick="insertImage()">🖼️ Image</button>
+            <button onclick="togglePreview()">👁️ Preview</button>
+        </div>
+
+        <div id="editor" class="editor" contenteditable="true">
+
+
+        </div>
+        <div id="preview" class="preview hidden">
+
+        </div>
+    </div>
+
+    <script src="../JS/rich-text-editor.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f9f9f9;
+  }
+  
+  .comment-box {
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #0e461d;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .comment {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    position: relative;
+  }
+  
+  .comment .actions {
+    font-size: 12px;
+    color: #24934f;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  
+  .reply-box {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .featured {
+    border-left: 4px solid rgb(141, 10, 10);
+  }
+  

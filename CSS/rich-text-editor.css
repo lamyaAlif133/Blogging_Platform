@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #9cd1ad;
+    padding: 20px;
+    color: #e1eede;
+  }
+  
+  .editor-container {
+    max-width: 800px;
+    margin: auto;
+    background: #3d6d4a;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+  }
+  
+  .toolbar {
+    margin-bottom: 10px;
+  }
+  
+  .toolbar button {
+    margin-right: 5px;
+    padding: 6px 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background: #e4f3b9;
+  }
+  
+  .editor, .preview {
+    border: 1px solid #ccc;
+    padding: 15px;
+    min-height: 300px;
+    background: #fff;
+  }
+  
+  .preview {
+    white-space: pre-wrap;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  img.resizable {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    border: 1px dashed #ccc;
+    margin: 10px 0;
+  }
+  
