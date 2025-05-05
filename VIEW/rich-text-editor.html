@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Rich Text Editor</title>
-    <link rel="stylesheet" href="../CSS/rich-text-editor.css">
+    <link rel="stylesheet" href="../Assets/CSS/rich-text-editor.css">
 </head>
 
 <body>
 
+  <div class="top-controls">
+        <button class="icon-btn" id="notificationBtn">🔔</button>
+        <button class="icon-btn" id="profileBtn"><a href="../VIEW/Authors-Profile.html">👩🏻</a></button>
+    </div>
     <div class="editor-container">
         <h3>Start Writing..</h3>
         <div class="toolbar">
@@ -26,14 +30,18 @@
 
         <div id="editor" class="editor" contenteditable="true">
 
-
         </div>
         <div id="preview" class="preview hidden">
 
         </div>
+<div class="bottom-controls">
+            <button id="commentBtn"><a href="../VIEW/Comment-System.html">💬 Comment</a></button>
+            <button id="shareBtn"><a href="../VIEW/social_sharing.html">📤 Share</a></button>
+            <button id="tagBtn"><a href="../VIEW/tagging.html">🏷️ Tag</a></button>
+        </div>
     </div>
 
-    <script src="../JS/rich-text-editor.js"></script>
+    <script src="../Assets/JS/rich-text-editor.js"></script>
 </body>
 
 </html>

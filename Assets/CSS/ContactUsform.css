@@ -1,5 +1,5 @@
 body {
-  background: url('../Assets/contract.jpg') no-repeat center center/cover;
+  background: url('../Pictures/contract.jpg') no-repeat center center/cover;
     font-family: Arial, sans-serif;
    
     padding: 20px;
@@ -8,7 +8,7 @@ body {
   .container {
     max-width: 400px;
     margin: auto;
-    background: #b3cfbb;
+    background: #b0b29c;
     padding: 50px;
     border-radius: 8px;
     box-shadow: 0 0 10px #ccc;
@@ -35,7 +35,7 @@ body {
     margin-top: 20px;
     width: 100%;
     padding: 10px;
-    background: #658e6e;
+    background: #8d917a;
     color: white;
     border: none;
     border-radius: 5px;

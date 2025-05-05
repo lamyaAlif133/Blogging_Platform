@@ -1,3 +1,5 @@
+
+
 function format(command, value = null) {
   document.execCommand(command, false, value);
   saveContent(); // Save after formatting
@@ -76,3 +78,8 @@ editor.addEventListener("input", () => {
 function saveContent() {
   localStorage.setItem(LOCAL_STORAGE_KEY, editor.innerHTML);
 }
+
+document.getElementById("notificationBtn").addEventListener("click", () => {
+  alert("You have no new notifications.");
+});
+
