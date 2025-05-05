@@ -7,45 +7,52 @@
   <link rel="stylesheet" href="../CSS/Signup.css" />
 </head>
 <body>
-  <div class="signup-container">
-    <form id="signupForm" novalidate>
-      <h2>Sign Up</h2>
-
-      <label for="name">Name</label>
-      <input type="text" id="name" required />
-
-      <label for="email">Email</label>
-      <input type="email" id="email" required />
-
-      <label for="phone">Phone</label>
-      <input type="text" id="phone" required />
-
-      <label for="gender">Gender</label>
-      <select id="gender" required>
-        <option value="">Select</option>
-        <option>Male</option>
-        <option>Female</option>
-        <option>Other</option>
-      </select>
-
-      <label for="profession">Profession</label>
-      <input type="text" id="profession" required />
-
-      <label for="password">Password</label>
-      <input type="password" id="password" required />
-
-      <label for="confirmPassword">Confirm Password</label>
-      <input type="password" id="confirmPassword" required />
-
-      <label for="dob">Date of Birth</label>
-      <input type="date" id="dob" required />
-
-      <label for="address">Address</label>
-      <textarea id="address" required></textarea>
-
-      <button type="submit">Register</button>
-      <p id="errorMsg" class="error-msg"></p>
-    </form>
+  <div class="main-container">
+    <div class="left">
+      <!-- <img src="../Assets/download (4).jpeg" alt=""> -->
+    </div>
+    <div class="right">
+      <div class="signup-container">
+        <form id="signupForm" novalidate>
+          <h2>Sign Up</h2>
+    
+          <label for="name">Name</label>
+          <input type="text" id="name" required />
+    
+          <label for="email">Email</label>
+          <input type="email" id="email" required />
+    
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" required />
+    
+          <label for="gender">Gender</label>
+          <select id="gender" required>
+            <option value="">Select</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+    
+          <label for="profession">Profession</label>
+          <input type="text" id="profession" required />
+    
+          <label for="password">Password</label>
+          <input type="password" id="password" required />
+    
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" required />
+    
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" required />
+    
+          <label for="address">Address</label>
+          <textarea id="address" required></textarea>
+    
+          <button type="submit">Register</button>
+          <p id="errorMsg" class="error-msg"></p>
+        </form>
+      </div>
+    </div>
   </div>
 
   <script src="../JS/Signup.js"></script>
