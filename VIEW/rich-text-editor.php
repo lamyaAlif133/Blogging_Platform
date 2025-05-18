@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +17,12 @@
         
         <button class="icon-btn" id="notificationBtn">🔔</button>
         <button class="icon-btn" id="profileBtn"><a href="../VIEW/Authors-Profile.html">👩🏻</a></button>
+        <h4>
+            <?php
+                echo $_SESSION['name'];
+            ?>
+
+        </h1>
 
     </div>
     <div class="editor-container">
