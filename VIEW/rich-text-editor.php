@@ -17,13 +17,13 @@
         
         <button class="icon-btn" id="notificationBtn">🔔</button>
         <button class="icon-btn" id="profileBtn"><a href="../VIEW/Authors-Profile.html">👩🏻</a></button>
+
         <h4>
             <?php
                 echo $_SESSION['name'];
             ?>
 
-        </h1>
-
+        </h4>
     </div>
     <div class="editor-container">
         <h3>Start Writing..</h3>

@@ -46,7 +46,7 @@ exportBtn.addEventListener('click', () => {
   document.body.removeChild(link);
 });
 
-// Close popup
+
 closeBtn.addEventListener('click', () => {
   document.getElementById('newsletter-popup').style.display = 'none';
 });

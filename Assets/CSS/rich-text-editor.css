@@ -1,5 +1,4 @@
-/* To
-p right corner buttons */
+
 body {
     font-family: Arial, sans-serif;
     background: #defbe7;
@@ -72,7 +71,6 @@ body {
   background-color: #ddd;
 }
 
-/* Bottom buttons */
 .bottom-controls {
   margin-top: 15px;
   display: flex;

@@ -2,7 +2,7 @@
 
 function format(command, value = null) {
   document.execCommand(command, false, value);
-  saveContent(); // Save after formatting
+  saveContent(); 
 }
 
 function insertLink() {
@@ -35,7 +35,7 @@ function togglePreview() {
   }
 }
 
-// Drag and drop image upload
+
 document.getElementById("editor").addEventListener("dragover", (e) => {
   e.preventDefault();
 });
@@ -57,11 +57,10 @@ document.getElementById("editor").addEventListener("drop", (e) => {
   }
 });
 
-// ✅ Auto-save feature
+
 const editor = document.getElementById("editor");
 const LOCAL_STORAGE_KEY = "richTextEditorContent";
 
-// Load saved content on page load
 window.addEventListener("DOMContentLoaded", () => {
   const savedContent = localStorage.getItem(LOCAL_STORAGE_KEY);
   if (savedContent) {
@@ -69,12 +68,10 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Save content on input (typing)
 editor.addEventListener("input", () => {
   saveContent();
 });
 
-// Save to localStorage
 function saveContent() {
   localStorage.setItem(LOCAL_STORAGE_KEY, editor.innerHTML);
 }
