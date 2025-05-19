@@ -35,7 +35,7 @@ function togglePreview() {
   }
 }
 
-// Drag and drop image upload
+
 document.getElementById("editor").addEventListener("dragover", (e) => {
   e.preventDefault();
 });
@@ -57,11 +57,10 @@ document.getElementById("editor").addEventListener("drop", (e) => {
   }
 });
 
-// ✅ Auto-save feature
+
 const editor = document.getElementById("editor");
 const LOCAL_STORAGE_KEY = "richTextEditorContent";
 
-// Load saved content on page load
 window.addEventListener("DOMContentLoaded", () => {
   const savedContent = localStorage.getItem(LOCAL_STORAGE_KEY);
   if (savedContent) {
@@ -69,17 +68,14 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Save content on input (typing)
+
 editor.addEventListener("input", () => {
   saveContent();
 });
 
-// Save to localStorage
-function saveContent() {
-  localStorage.setItem(LOCAL_STORAGE_KEY, editor.innerHTML);
-}
-
-document.getElementById("notificationBtn").addEventListener("click", () => {
-  alert("You have no new notifications.");
+document.getElementById("logoutBtn").addEventListener("click", function() {
+  // Replace this with your actual logout logic
+  alert("You have been logged out!");
+  // Example: Redirect to login page
+  window.location.href = "../VIEW/login.html";
 });
-

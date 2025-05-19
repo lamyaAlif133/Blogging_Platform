@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #dddfc2, #8daf9b);
+    color: #2c341b;
+  }
+  
+  .site-header {
+    background-color: #688a65;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: white;
+  }
+  
+  .logo {
+    height: 60px;
+    margin-right: 20px;
+  }
+  
+  .bio h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+  
+  .bio p {
+    margin: 5px 0 0;
+    font-size: 16px;
+  }
+  
+  .discover-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px 10px;
+    gap: 20px;
+  }
+  
+  .trending-topics, .random-posts {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 45%;
+  }
+  
+  h2 {
+    margin-top: 0;
+    color: #2c341b;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    background: #97ac82;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .post-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background: #f4f6ed;
+    border-left: 5px solid #688a65;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .post-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 15px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background: #6a7a5a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #2c341b;
+  }
+  
+    .trending-topics, .random-posts {
+      width: 90%;
+    }
+
+  
