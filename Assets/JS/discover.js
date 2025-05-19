@@ -1,6 +1,6 @@
 const posts = [
     { text: 'Morning Meditation Routines', img: 'images/meditation.jpg' },
-    { text: 'AI in Everyday Life', img: 'Pictures/ai.jpg' },
+    { text: 'AI in Everyday Life', img: 'images/ai.jpg' },
     { text: 'Decorating with Plants', img: 'images/plants.jpg' },
     { text: 'Healthy Smoothie Recipes', img: 'images/smoothie.jpg' },
     { text: 'Beginner Yoga Poses', img: 'images/yoga.jpg' }

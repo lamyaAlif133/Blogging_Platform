@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,6 +27,14 @@
         <button class="icon-btn" id="notificationBtn"><a href="../VIEW/notification.html">🔔</a></button>
         <button class="icon-btn" id="profileBtn"><a href="../VIEW/Authors-Profile.html">👩🏻</a></button>
         <button class="icon-btn" id="homeBtn"><a href="../VIEW/dashboard.html">📊</a></button>
+        
+        <h4>
+            <?php
+                echo $_SESSION['name'];
+            ?>
+
+        </h1>
+
     </div>
     
     
@@ -58,6 +70,7 @@
             <button id="commentBtn"><a href="../VIEW/Comment-System.html">💬 Comment</a></button>
             <button id="shareBtn"><a href="../VIEW/social_sharing.html">📤 Share</a></button>
             <button id="tagBtn"><a href="../VIEW/tagging.html">🏷️ Tag</a></button>
+            <button id="Featured_post"><a href="../VIEW/featured_post.html">🌟Featured_post</a></button>
         </div>
     
          
