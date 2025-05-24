@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    background: linear-gradient(135deg, #dddfc2, #8daf9b);
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -10,18 +10,19 @@ body {
 }
 
 .profile-container {
-    background: white;
+    background: #ffffff;
     padding: 30px 25px;
     border-radius: 15px;
     width: 100%;
     max-width: 500px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(44, 52, 27, 0.1);
+    border: 2px solid #6a7a5a;
 }
 
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
+    color: #2c341b;
 }
 
 .profile-form {
@@ -33,6 +34,7 @@ h1 {
 .profile-form label {
     font-weight: bold;
     margin-top: 5px;
+    color: #2c341b;
 }
 
 .profile-form input[type="text"],
@@ -41,9 +43,11 @@ h1 {
     width: 100%;
     padding: 10px;
     font-size: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #97ac82;
     border-radius: 8px;
     box-sizing: border-box;
+    background: #f5f7f2;
+    color: #2c341b;
 }
 
 textarea {
@@ -56,12 +60,13 @@ textarea {
     align-items: center;
     gap: 10px;
     font-size: 14px;
+    color: #2c341b;
 }
 
 .profile-form button {
     width: 100%;
     padding: 12px;
-    background: #00796B;
+    background: #688a65;
     color: white;
     border: none;
     border-radius: 8px;
@@ -72,14 +77,14 @@ textarea {
 }
 
 .profile-form button:hover {
-    background: #004D40;
+    background: #6a7a5a;
 }
 
 .profile-display {
     margin-top: 30px;
     text-align: center;
     padding-top: 20px;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #8daf9b;
 }
 
 .profile-display img {
@@ -88,16 +93,17 @@ textarea {
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 10px;
-    border: 3px solid #00796B;
+    border: 3px solid #688a65;
 }
 
 .profile-display h2 {
     margin: 10px 0;
     font-size: 22px;
+    color: #2c341b;
 }
 
 .profile-display p {
-    color: #555;
+    color: #6a7a5a;
     margin: 10px 0;
     font-style: italic;
 }
@@ -105,7 +111,7 @@ textarea {
 .profile-display a {
     display: inline-block;
     margin-top: 10px;
-    color: #0288D1;
+    color: #2c341b;
     text-decoration: none;
     font-weight: bold;
 }
@@ -117,7 +123,7 @@ textarea {
 .profile-display button {
     margin-top: 15px;
     padding: 10px 20px;
-    background: #0288D1;
+    background: #6a7a5a;
     color: white;
     border: none;
     border-radius: 8px;
@@ -126,11 +132,11 @@ textarea {
 }
 
 .profile-display button:hover {
-    background: #01579B;
+    background: #2c341b;
 }
 
 .verified-badge {
-    color: #4CAF50;
+    color: #688a65;
     font-weight: bold;
     font-size: 18px;
     margin-left: 8px;

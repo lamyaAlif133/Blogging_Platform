@@ -20,17 +20,17 @@ function updateCategoryUI() {
   filterCategories.innerHTML = '';
 
   categories.forEach(category => {
-   
+    // Category Manager List
     const li = document.createElement('li');
     li.textContent = category;
     categoryList.appendChild(li);
 
-   
+    // Category Assignment Checkboxes
     const label = document.createElement('label');
     label.innerHTML = `<input type="checkbox" value="${category}"> ${category}`;
     categoryAssign.appendChild(label);
 
-   
+    // Sidebar Filter
     const filterLi = document.createElement('li');
     filterLi.innerHTML = `<button onclick="filterPosts('${category}')">${category}</button>`;
     filterCategories.appendChild(filterLi);

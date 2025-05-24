@@ -1,8 +1,7 @@
 
-
 function format(command, value = null) {
   document.execCommand(command, false, value);
-  saveContent(); 
+  saveContent();
 }
 
 function insertLink() {
@@ -68,15 +67,14 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+
 editor.addEventListener("input", () => {
   saveContent();
 });
 
-function saveContent() {
-  localStorage.setItem(LOCAL_STORAGE_KEY, editor.innerHTML);
-}
-
-document.getElementById("notificationBtn").addEventListener("click", () => {
-  alert("You have no new notifications.");
+document.getElementById("logoutBtn").addEventListener("click", function() {
+  // Replace this with your actual logout logic
+  alert("You have been logged out!");
+  // Example: Redirect to login page
+  window.location.href = "../VIEW/login.html";
 });
-
