@@ -1,8 +1,7 @@
 
-
 function format(command, value = null) {
   document.execCommand(command, false, value);
-  saveContent(); // Save after formatting
+  saveContent();
 }
 
 function insertLink() {
