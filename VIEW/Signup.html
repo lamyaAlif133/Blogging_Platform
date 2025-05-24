@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Signup Form</title>
   <link rel="stylesheet" href="../Assets/CSS/Signup.css" />
 </head>
+
 <body>
   <div class="main-container">
-    <div class="left">
-
-    </div>
+    <div class="left"></div>
     <div class="right">
       <div class="signup-container">
-        <form id="signupForm" novalidate>
+        <form id="signupForm" method="post" novalidate action="../Controller/signupControl.php" enctype="">
           <h2>Sign Up</h2>
-    
+
           <label for="name">Name</label>
-          <input type="text" id="name" required />
-    
+          <input type="text" id="name" name="name" required />
+
           <label for="email">Email</label>
-          <input type="email" id="email" required />
-    
+          <input type="email" id="email" name="email" required />
+
           <label for="phone">Phone</label>
-          <input type="text" id="phone" required />
-    
+          <input type="text" id="phone" name="phone" required />
+
           <label for="gender">Gender</label>
-          <select id="gender" required>
+          <select id="gender" name="gender" required>
             <option value="">Select</option>
             <option>Male</option>
             <option>Female</option>
             <option>Other</option>
           </select>
-    
+
           <label for="profession">Profession</label>
-          <input type="text" id="profession" required />
-    
+          <input type="text" id="profession" name="profession" required />
+
           <label for="password">Password</label>
-          <input type="password" id="password" required />
-    
+          <input type="password" id="password" name="password" required />
+
           <label for="confirmPassword">Confirm Password</label>
-          <input type="password" id="confirmPassword" required />
-    
+          <input type="password" id="confirmPassword" name="confirmPassword" required />
+
           <label for="dob">Date of Birth</label>
-          <input type="date" id="dob" required />
-    
+          <input type="date" id="dob" name="dob" required />
+
           <label for="address">Address</label>
-          <textarea id="address" required></textarea>
-    
-          <button type="submit">Register</button>
+          <textarea id="address" name="address" required></textarea>
+
+          <button type="submit" name="submit">Register</button>
           <p id="errorMsg" class="error-msg"></p>
         </form>
       </div>
@@ -57,4 +57,5 @@
 
   <script src="../Assets/JS/Signup.js"></script>
 </body>
+
 </html>

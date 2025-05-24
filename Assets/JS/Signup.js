@@ -37,10 +37,15 @@
       return;
     }
   
-    if (phone.length !== 11) {
-      errorMsg.textContent = "Phone must be a 10-digit number.";
+    if (
+      phone.length !== 11 ||
+      !phone.startsWith("01") ||
+      [...phone].some(ch => ch < '0' || ch > '9')
+    ) {
+      errorMsg.textContent = "Phone must be an 11-digit number starting with 01.";
       return;
     }
+    
   
     if (!gender) {
       errorMsg.textContent = "Please select your gender.";

@@ -9,7 +9,6 @@
 <body>
   <div class="sidebar">
     <h2>MyBlog Dashboard</h2>
-    
   </div>
 
   <div class="main">
@@ -18,7 +17,7 @@
       <div>
         <a href="../VIEW/LandingPage.html">Home</a> 
         <a href="../VIEW/discover.html">Explore</a> 
-        <a href="../VIEW/rich-text-editor.php">Create Post</a>
+        <a href="../VIEW/rich-text-editor.php"> Create Post</a>
       </div>
     </header>
 
@@ -71,24 +70,25 @@
       </table>
     </div>
 
-
+    <!-- NEW SECTION: All Posts -->
     <div class="section">
-      <h2>Analytics Preview</h2>
-      <canvas id="viewsChart" class="chart" width="400" height="200"></canvas>
+      <h2>All My Posts</h2>
+      <div id="postsList" class="posts-list">
+        <!-- Posts will be inserted here using JavaScript -->
+      </div>
     </div>
+
     <div class="section">
       <h2>Recent Comments</h2>
       <ul>
         <li><strong>Raian:</strong> Great post! Really enjoyed it.</li>
         <li><strong>Alif:</strong> I found this very helpful, thanks!</li>
         <li><strong>Tanha:</strong> Can't wait to read more from you!</li>
-
       </ul>
+    </div>
 
-    
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="../Assets/JS/dashboard.js"></script>
 </body>
 </html>

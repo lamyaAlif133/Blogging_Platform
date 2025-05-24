@@ -116,11 +116,12 @@ body {
 .bottom-controls button:hover {
   background-color: #45a049;
 }
+
 .logout-button {
   position: fixed;
   bottom: 20px;
   left: 20px;
-  background-color: #d9534f;
+  background-color: #aadca5;
   color: white;
   border: none;
   padding: 10px 16px;
@@ -132,5 +133,5 @@ body {
 }
 
 .logout-button:hover {
-  background-color: #c9302c;
+  background-color: #778f6d;
 }
