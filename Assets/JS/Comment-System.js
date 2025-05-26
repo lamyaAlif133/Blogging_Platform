@@ -13,7 +13,7 @@ function addComment(parent = null) {
 
   let actions = document.createElement("div");
   actions.className = "actions";
- 
+
   actions.innerHTML = `
     <span onclick="replyComment(this)">Reply</span> |
     <span onclick="featureComment(this)">Pin</span> |

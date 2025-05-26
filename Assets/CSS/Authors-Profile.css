@@ -1,144 +1,76 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #dddfc2, #8daf9b);
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 40px;
-    min-height: 100vh;
-    margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
 }
 
 .profile-container {
-    background: #ffffff;
-    padding: 30px 25px;
-    border-radius: 15px;
-    width: 100%;
-    max-width: 500px;
-    box-shadow: 0 8px 20px rgba(44, 52, 27, 0.1);
-    border: 2px solid #6a7a5a;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
 }
 
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #2c341b;
-}
-
-.profile-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
 }
 
 .profile-form label {
-    font-weight: bold;
-    margin-top: 5px;
-    color: #2c341b;
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #555;
 }
 
 .profile-form input[type="text"],
-.profile-form textarea,
-.profile-form input[type="file"] {
-    width: 100%;
-    padding: 10px;
-    font-size: 15px;
-    border: 1px solid #97ac82;
-    border-radius: 8px;
-    box-sizing: border-box;
-    background: #f5f7f2;
-    color: #2c341b;
+.profile-form input[type="email"],
+.profile-form input[type="date"],
+.profile-form select,
+.profile-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
-textarea {
-    resize: vertical;
-    min-height: 80px;
+.profile-form textarea {
+  resize: vertical;
+  height: 80px;
 }
 
-.checkbox-label {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 14px;
-    color: #2c341b;
+.button-group {
+  margin-top: 20px;
+  text-align: center;
 }
 
-.profile-form button {
-    width: 100%;
-    padding: 12px;
-    background: #688a65;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s;
+.update-btn,
+.delete-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
 }
 
-.profile-form button:hover {
-    background: #6a7a5a;
+.delete-btn {
+  background-color: #e74c3c;
 }
 
-.profile-display {
-    margin-top: 30px;
-    text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid #8daf9b;
+.update-btn:hover {
+  background-color: #45a049;
 }
 
-.profile-display img {
-    width: 110px;
-    height: 110px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    border: 3px solid #688a65;
-}
-
-.profile-display h2 {
-    margin: 10px 0;
-    font-size: 22px;
-    color: #2c341b;
-}
-
-.profile-display p {
-    color: #6a7a5a;
-    margin: 10px 0;
-    font-style: italic;
-}
-
-.profile-display a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #2c341b;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.profile-display a:hover {
-    text-decoration: underline;
-}
-
-.profile-display button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: #6a7a5a;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.profile-display button:hover {
-    background: #2c341b;
-}
-
-.verified-badge {
-    color: #688a65;
-    font-weight: bold;
-    font-size: 18px;
-    margin-left: 8px;
-    vertical-align: middle;
+.delete-btn:hover {
+  background-color: #c0392b;
 }

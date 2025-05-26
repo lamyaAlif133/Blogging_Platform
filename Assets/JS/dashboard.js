@@ -1,45 +1,23 @@
-// Example posts array
-const posts = [
-    {
-      title: "First Blog Post",
-      status: "Published",
-      views: 1200,
-      likes: 150
-    },
-    {
-      title: "Travel Adventures",
-      status: "Draft",
-      views: 0,
-      likes: 0
-    },
-    {
-      title: "My Thoughts on Life",
-      status: "Published",
-      views: 850,
-      likes: 85
-    },
-    {
-      title: "Learning JavaScript",
-      status: "Published",
-      views: 600,
-      likes: 90
+const ctx = document.getElementById('viewsChart').getContext('2d');
+const viewsChart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+    datasets: [{
+      label: 'Views',
+      data: [120, 190, 300, 500, 200, 300, 400],
+      backgroundColor: 'rgba(141, 175, 155, 0.2)',
+      borderColor: '#688a65',
+      borderWidth: 2,
+      fill: true,
+      tension: 0.4
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
     }
-  ];
-  
-  // Render posts in the All My Posts section
-  const postsList = document.getElementById("postsList");
-  
-  posts.forEach(function(post) {
-    const postDiv = document.createElement("div");
-    postDiv.className = "post-item";
-  
-    postDiv.innerHTML = `
-      <h3>${post.title}</h3>
-      <p>Status: ${post.status}</p>
-      <p>Views: ${post.views}</p>
-      <p>Likes: ${post.likes}</p>
-    `;
-  
-    postsList.appendChild(postDiv);
-  });
-  
+  }
+});

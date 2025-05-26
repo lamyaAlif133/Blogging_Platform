@@ -26,7 +26,7 @@ require('../Model/db.php');
 
     <div class="top-controls">
         <button class="icon-btn" id="notificationBtn"><a href="../VIEW/notification.html">🔔</a></button>
-        <button class="icon-btn" id="profileBtn"><a href="../VIEW/Authors-Profile.html">👩🏻</a></button>
+        <button class="icon-btn" id="profileBtn"><a href="../VIEW/Authors-Profile.php">👩🏻</a></button>
         <button class="icon-btn" id="homeBtn"><a href="../VIEW/dashboard.html">📊</a></button>
 
         <h4>
@@ -79,4 +79,5 @@ require('../Model/db.php');
 
     <script src="../Assets/JS/rich-text-editor.js"></script>
 </body>
+
 </html>
